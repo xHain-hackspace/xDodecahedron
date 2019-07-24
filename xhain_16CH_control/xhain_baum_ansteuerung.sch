@@ -6694,6 +6694,83 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX">
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.508" x2="-0.1905" y2="0.508" width="0.127" layer="51"/>
+<wire x1="-0.1905" y1="0.508" x2="-0.1905" y2="-0.508" width="0.127" layer="51"/>
+<wire x1="-0.1905" y1="-0.508" x2="1.016" y2="-0.508" width="0.127" layer="51"/>
+<wire x1="1.016" y1="-0.508" x2="1.016" y2="0.508" width="0.127" layer="51"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="0.0635" y="-0.4445" size="0.254" layer="51" rot="R40">PASTE</text>
+<rectangle x1="-0.2794" y1="-1.016" x2="1.4224" y2="0.9906" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD-JUMPER-3-2OF3-NC_BY_PASTE">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.254" layer="95">
+<vertex x="-1.524" y="0.762"/>
+<vertex x="-1.524" y="-1.524" curve="90"/>
+<vertex x="0" y="-3.048" curve="90"/>
+<vertex x="1.524" y="-1.524"/>
+<vertex x="1.524" y="0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JUMPER-PAD-3-2OF3_NC_BY_PASTE">
+<gates>
+<gate name="G$1" symbol="PAD-JUMPER-3-2OF3-NC_BY_PASTE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6777,6 +6854,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="SV7" library="xhain_tree_lib" deviceset="MA02-1" device=""/>
+<part name="U$2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_PASTE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6865,6 +6943,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="GND13" gate="1" x="78.74" y="134.62"/>
 <instance part="P+1" gate="1" x="50.8" y="137.16" rot="R90"/>
 <instance part="SV7" gate="G$1" x="149.86" y="124.46"/>
+<instance part="U$2" gate="G$1" x="93.98" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -7065,22 +7144,12 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="134.62" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
 <label x="129.54" y="165.1" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U1" gate="A" pin="2A"/>
-<wire x1="10.16" y1="177.8" x2="7.62" y2="177.8" width="0.1524" layer="91"/>
-<label x="7.62" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="ND35" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D35"/>
 <wire x1="134.62" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
 <label x="129.54" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="3A"/>
-<wire x1="10.16" y1="175.26" x2="7.62" y2="175.26" width="0.1524" layer="91"/>
-<label x="7.62" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND32" class="0">
@@ -7090,9 +7159,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="129.54" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="1A"/>
-<wire x1="10.16" y1="180.34" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
-<label x="7.62" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="2A"/>
+<wire x1="10.16" y1="177.8" x2="7.62" y2="177.8" width="0.1524" layer="91"/>
+<label x="7.62" y="177.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND33" class="0">
@@ -7102,9 +7171,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="129.54" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="4A"/>
-<wire x1="10.16" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
-<label x="7.62" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="3A"/>
+<wire x1="10.16" y1="175.26" x2="7.62" y2="175.26" width="0.1524" layer="91"/>
+<label x="7.62" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND26" class="0">
@@ -7114,9 +7183,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="129.54" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="2A"/>
-<wire x1="10.16" y1="134.62" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
-<label x="7.62" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="4A"/>
+<wire x1="10.16" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
+<label x="7.62" y="172.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND27" class="0">
@@ -7126,9 +7195,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="129.54" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="4A"/>
-<wire x1="10.16" y1="129.54" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
-<label x="7.62" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="A" pin="3A"/>
+<wire x1="10.16" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
+<label x="7.62" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND14" class="0">
@@ -7138,9 +7207,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="129.54" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="1A"/>
-<wire x1="10.16" y1="137.16" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
-<label x="7.62" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="A" pin="2A"/>
+<wire x1="10.16" y1="134.62" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
+<label x="7.62" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND12" class="0">
@@ -7149,12 +7218,22 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="134.62" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
 <label x="129.54" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="152.4" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
+<label x="93.98" y="154.94" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="ND13" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D13"/>
 <wire x1="134.62" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
 <label x="129.54" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="4A"/>
+<wire x1="10.16" y1="129.54" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
+<label x="7.62" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ND23" class="0">
@@ -7286,9 +7365,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="165.1" y="144.78" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="2A"/>
-<wire x1="10.16" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
-<label x="7.62" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="93.98" y1="142.24" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
+<label x="93.98" y="139.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ND15" class="0">
@@ -7296,6 +7375,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="U$1" gate="G$1" pin="D15"/>
 <wire x1="160.02" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="1A"/>
+<wire x1="10.16" y1="137.16" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
+<label x="7.62" y="137.16" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="1_1Y" class="0">
@@ -7636,14 +7720,14 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="ND25" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="3A"/>
-<wire x1="10.16" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
-<label x="7.62" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="D25"/>
 <wire x1="134.62" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <label x="129.54" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="1A"/>
+<wire x1="10.16" y1="180.34" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
+<label x="7.62" y="180.34" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7651,6 +7735,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="R34" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="66.04" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ND02OR12" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="2A"/>
+<wire x1="10.16" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="7.62" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
+<label x="86.36" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
