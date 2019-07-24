@@ -1,0 +1,7 @@
+- Spannungsversorgung für die Leds raus
+- so viele wie möglich Outputs vom ESP (3,3V) auf die Spannungswandler mit outputs (5V) zu Buchsen (wir brauchen 10 outputs)
+- jeder 5V output mit 220Ohm Vorwiderstand
+- Serieller output vom ESP (RX, TX, GND) UART2 
+- Spannungsversorgung für den ESP mit Buchse (GND und 5V) als Stecker mit MicroUSB und nicht die 5V auf den Pins
+- ESP32 DEVKITV1 soll drauf
+
